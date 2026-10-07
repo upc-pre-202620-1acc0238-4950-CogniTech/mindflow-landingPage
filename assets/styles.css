@@ -1257,8 +1257,8 @@ nav {
 /* —— Team (full bios, used on nosotros.html) —— */
 .team-full__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	gap: 1.5rem;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 1.25rem;
 }
 
 .team-bio-card {
@@ -1266,7 +1266,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 2rem 1.5rem;
+	padding: 1.5rem 1.1rem;
 	border-radius: 1.15rem;
 	border: 1px solid var(--borders);
 	background: var(--white);
@@ -1282,34 +1282,34 @@ nav {
 }
 
 .team-bio-card__photo {
-	width: 128px;
-	height: 128px;
+	width: 96px;
+	height: 96px;
 	border-radius: 50%;
 	object-fit: cover;
-	margin-bottom: 1.1rem;
+	margin-bottom: 1rem;
 	border: 3px solid var(--white);
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .team-bio-card h3 {
-	font-size: 1.1rem;
+	font-size: 0.98rem;
 	font-weight: 700;
 	margin-bottom: 0.2rem;
 }
 
 .team-bio-card__role {
-	font-size: 0.82rem;
+	font-size: 0.72rem;
 	font-weight: 700;
 	color: var(--primary-blue);
 	text-transform: uppercase;
-	letter-spacing: 0.04em;
-	margin-bottom: 0.9rem;
+	letter-spacing: 0.03em;
+	margin-bottom: 0.8rem;
 }
 
 .team-bio-card__text {
-	font-size: 0.9rem;
+	font-size: 0.82rem;
 	color: var(--gray-text);
-	line-height: 1.65;
+	line-height: 1.55;
 }
 
 /* —— Mission / Vision (nosotros.html) —— */
@@ -1721,6 +1721,10 @@ nav {
 	.screenshots__grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.team-full__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media (max-width: 900px) {
@@ -1770,6 +1774,10 @@ nav {
 	.pricing__grid,
 	.mission__grid {
 		grid-template-columns: 1fr;
+	}
+
+	.team-full__grid {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.steps__connector {
@@ -1848,6 +1856,12 @@ nav {
 	.navbar__menu {
 		gap: 0.8rem;
 		flex-wrap: wrap;
+	}
+
+	.team-full__grid {
+		grid-template-columns: 1fr;
+		max-width: 320px;
+		margin: 0 auto;
 	}
 
 	.navbar__menu a,
