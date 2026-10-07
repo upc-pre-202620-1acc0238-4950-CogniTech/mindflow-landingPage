@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" data-i18n-attr="content:nosotros.description" />
+	<title data-i18n="nosotros.title">Sobre nosotros — MindFlow</title>
+	<link rel="icon" href="assets/images/logo.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar" aria-label="Main navigation">
+			<a href="index.html#hero" class="navbar__logo" aria-label="MindFlow home">
+				<img src="assets/images/logo.png" alt="" class="logo-image" />
+				<span class="logo-text">MindFlow</span>
+			</a>
+
+			<button type="button" class="navbar__toggle" aria-expanded="false" aria-controls="navbar-panel" aria-label="Open menu">
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+			</button>
+
+			<div class="navbar__panel" id="navbar-panel">
+				<ul class="navbar__menu">
+					<li><a href="index.html#problem" data-i18n="nav.problem">Problema</a></li>
+					<li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
+					<li><a href="index.html#screenshots" data-i18n="nav.screenshots">Capturas</a></li>
+					<li><a href="index.html#features" data-i18n="nav.features">Funciones</a></li>
+					<li><a href="index.html#pricing" data-i18n="nav.pricing">Planes</a></li>
+					<li><a href="nosotros.html" class="is-active" data-i18n="nav.team">Nosotros</a></li>
+				</ul>
+
+				<div class="navbar__actions">
+					<button type="button" class="lang-switch" data-lang-toggle aria-label="Switch language">
+						<span data-i18n="lang.switch">EN</span>
+					</button>
+					<a href="#" class="btn-signup" data-app-link data-i18n="nav.download">Descargar app</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- ABOUT HERO -->
+		<section id="about-hero" class="section-block section-block--hero" aria-label="About us hero">
+			<div class="hero__blobs" aria-hidden="true">
+				<span class="hero__blob hero__blob--1"></span>
+				<span class="hero__blob hero__blob--2"></span>
+			</div>
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center hero-animate" style="max-width: 760px;">
+					<p class="eyebrow hero__badge" style="display:inline-flex; margin: 0 auto 1rem;"><span data-i18n="nosotros.eyebrow">Sobre nosotros</span></p>
+					<h1 class="section-block__title" style="font-size: 2.75rem;" data-i18n="nosotros.title">Somos CogniTech</h1>
+					<p class="section-block__description" data-i18n="nosotros.description">
+						Una startup estudiantil en la intersección entre la salud mental y la inteligencia artificial.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- MISSION / VISION -->
+		<section id="mission" class="section-block section-block--white" aria-label="Mission and vision">
+			<div class="section-block__container">
+				<div class="mission__grid">
+					<div class="mission-card">
+						<p class="mission-card__label" data-i18n="nosotros.missionLabel">Misión</p>
+						<p data-i18n="nosotros.missionText">
+							Empoderar a las personas en la gestión de su bienestar emocional mediante aplicaciones inteligentes, accesibles y éticas.
+						</p>
+					</div>
+					<div class="mission-card">
+						<p class="mission-card__label" data-i18n="nosotros.visionLabel">Visión</p>
+						<p data-i18n="nosotros.visionText">
+							Ser la startup líder en la región en la creación de ecosistemas digitales de salud mental.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TEAM -->
+		<section id="team" class="section-block section-block--blue" aria-label="Team section">
+			<div class="section-block__container">
+				<div class="section-block__header section-block__header--center">
+					<p class="eyebrow" data-i18n="nosotros.teamEyebrow">El equipo</p>
+					<h2 class="section-block__title" data-i18n="nosotros.teamTitle">Las personas detrás de MindFlow</h2>
+					<p class="section-block__description" data-i18n="nosotros.teamDescription">
+						Cinco estudiantes de Ingeniería de Software de la UPC.
+					</p>
+				</div>
+				<div class="team-full__grid">
+					<article class="team-bio-card">
+						<img src="assets/images/team/cabrera-camila.jpeg" alt="" class="team-bio-card__photo" data-team-fallback="CC" />
+						<h3 data-i18n="nosotros.member1Name">Camila Cabrera Sotelo</h3>
+						<p class="team-bio-card__role" data-i18n="nosotros.member1Role">App Móvil &amp; Despliegue</p>
+						<p class="team-bio-card__text" data-i18n="nosotros.member1Bio">
+							Estudiante de Ingeniería de Software con interés en desarrollo web, diseño de interfaces y experiencia de usuario.
+						</p>
+					</article>
+					<article class="team-bio-card">
+						<img src="assets/images/team/diaz-sebastian.jpeg" alt="" class="team-bio-card__photo" data-team-fallback="SD" />
+						<h3 data-i18n="nosotros.member2Name">Sebastián Díaz De la Cruz</h3>
+						<p class="team-bio-card__role" data-i18n="nosotros.member2Role">Backend &amp; Landing Page</p>
+						<p class="team-bio-card__text" data-i18n="nosotros.member2Bio">
+							Programa en C++, C#, JavaScript y Python, con interés en soluciones orientadas a procesos empresariales.
+						</p>
+					</article>
+					<article class="team-bio-card">
+						<img src="assets/images/team/guere-fernando.jpeg" alt="" class="team-bio-card__photo" data-team-fallback="FG" />
+						<h3 data-i18n="nosotros.member3Name">Fernando Güere Calero</h3>
+						<p class="team-bio-card__role" data-i18n="nosotros.member3Role">Backend &amp; Arquitectura</p>
+						<p class="team-bio-card__text" data-i18n="nosotros.member3Bio">
+							Programa en C++, C# y Python, además de desarrollo web con HTML, CSS y JavaScript.
+						</p>
+					</article>
+					<article class="team-bio-card">
+						<img src="assets/images/team/jauregui-jean.jpeg" alt="" class="team-bio-card__photo" data-team-fallback="JJ" />
+						<h3 data-i18n="nosotros.member4Name">Jean Franco Jáuregui Cerna</h3>
+						<p class="team-bio-card__role" data-i18n="nosotros.member4Role">App Móvil &amp; Despliegue</p>
+						<p class="team-bio-card__text" data-i18n="nosotros.member4Bio">
+							Desarrolla con Angular, Vue.js, Node.js y Python, con experiencia en despliegues sobre Docker, GCP y Azure.
+						</p>
+					</article>
+					<article class="team-bio-card">
+						<img src="assets/images/team/limache-imanol.jpeg" alt="" class="team-bio-card__photo" data-team-fallback="IL" />
+						<h3 data-i18n="nosotros.member5Name">Imanol Limache Coronel</h3>
+						<p class="team-bio-card__role" data-i18n="nosotros.member5Role">Pruebas &amp; Calidad</p>
+						<p class="team-bio-card__text" data-i18n="nosotros.member5Bio">
+							Programa en C++ y desarrollo web, con interés en algoritmos y estructuras de datos avanzadas.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section id="cta" class="cta section-block section-block--white" aria-label="Call to action section">
+			<div class="section-block__container">
+				<div class="cta__box">
+					<h2 class="cta__title" data-i18n="nosotros.ctaTitle">¿Quieres conocer el producto?</h2>
+					<p class="cta__text" data-i18n="nosotros.ctaText">Descubre cómo MindFlow convierte el journaling diario en claridad emocional.</p>
+					<a href="index.html#hero" class="cta__button" data-i18n="nosotros.ctaButton">Ver MindFlow</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" aria-label="Footer">
+		<div class="footer__container">
+			<div class="footer__brand">
+				<a href="index.html#hero" class="footer__logo" aria-label="MindFlow home">
+					<img src="assets/images/logo.png" alt="" class="logo-image" />
+					<span class="logo-text">MindFlow</span>
+				</a>
+				<p class="footer__description" data-i18n="footer.description">MindFlow te ayuda a entender tus emociones.</p>
+			</div>
+
+			<div class="footer__columns">
+				<div class="footer__column">
+					<h3 class="footer__title" data-i18n="footer.product">Producto</h3>
+					<ul class="footer__list">
+						<li><a href="index.html#features" data-i18n="nav.features">Funciones</a></li>
+						<li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
+						<li><a href="index.html#pricing" data-i18n="footer.plans">Planes</a></li>
+						<li><a href="index.html#screenshots" data-i18n="footer.screenshots">Capturas</a></li>
+						<li><a href="index.html#analytics" data-i18n="analytics.title">Analíticas</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__column">
+					<h3 class="footer__title" data-i18n="footer.company">Empresa</h3>
+					<ul class="footer__list">
+						<li><a href="nosotros.html" data-i18n="footer.aboutUs">Sobre nosotros</a></li>
+						<li><a href="nosotros.html#team" data-i18n="footer.team">Equipo</a></li>
+						<li>
+							<a href="mailto:cognitech.mindflow@gmail.com" data-i18n="footer.contact">Contacto</a>
+							<span class="footer__email" data-i18n="footer.contactEmail">cognitech.mindflow@gmail.com</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__column">
+					<h3 class="footer__title" data-i18n="footer.legal">Legal</h3>
+					<ul class="footer__list">
+						<li><a href="assets/legal/privacy.html" data-i18n="footer.privacy">Política de Privacidad</a></li>
+						<li><a href="assets/legal/terms.html" data-i18n="footer.terms">Términos y Condiciones</a></li>
+						<li><a href="assets/legal/cookies.html" data-i18n="footer.cookies">Política de Cookies</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p data-i18n="footer.copyright" data-i18n-vars='{"year":2026}'>© 2026 MindFlow. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="assets/script.js"></script>
+</body>
+</html>
