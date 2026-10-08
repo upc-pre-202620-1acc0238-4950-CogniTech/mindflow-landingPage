@@ -1,6 +1,7 @@
 # mindflow-landingPage
 
 Landing page de MindFlow (CogniTech) para la app móvil Android. Sitio estático (HTML/CSS/JS, sin build step), con i18n ES/EN.
+
 Enlace de la landing page desplegada en GitHub Pages: https://upc-pre-202620-1acc0238-4950-cognitech.github.io/mindflow-landingPage/
 
 ## Estructura
